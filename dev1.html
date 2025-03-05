@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Information Form</title>
+</head>
+<body>
+
+<h1>Student Information Form</h1>
+
+<form action="/submit-student-info" method="POST">
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first_name" required><br><br>
+
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last_name" required><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+    <label for="course">Course Enrolled:</label>
+    <select id="course" name="course" required>
+        <option value="computer-science">Computer Science</option>
+        <option value="mathematics">Mathematics</option>
+        <option value="biology">Biology</option>
+        <option value="physics">Physics</option>
+    </select><br><br>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required> Male
+    <input type="radio" id="female" name="gender" value="female"> Female
+    <input type="radio" id="other" name="gender" value="other"> Other<br><br>
+
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
